@@ -1,77 +1,54 @@
 package com.company;
 
-public class FourByFour {
+public class ThreeByFive {
     public static void main(String [] args) {
-//code to define an initially empty int 2D array,
-//minimum size 4x4
-        int[][] nums = new int[4][4];
+    // note...this is a 2x5 int array
+    // a 3x5 array is required
+        int[][] nums = { {3,6,2,9,7}, {7,45,9,12,44},{0,0,0,0,0} };
 
-//code to output all original values
+    //this output is incomplete for this array
         System.out.println(nums[0][0]);
         System.out.println(nums[0][1]);
         System.out.println(nums[0][2]);
         System.out.println(nums[0][3]);
-
+        System.out.println(nums[0][4]);
         System.out.println(nums[1][0]);
         System.out.println(nums[1][1]);
         System.out.println(nums[1][2]);
         System.out.println(nums[1][3]);
-
+        System.out.println(nums[1][4]);
         System.out.println(nums[2][0]);
         System.out.println(nums[2][1]);
         System.out.println(nums[2][2]);
         System.out.println(nums[2][3]);
+        System.out.println(nums[2][4]);
 
-        System.out.println(nums[3][0]);
-        System.out.println(nums[3][1]);
-        System.out.println(nums[3][2]);
-        System.out.println(nums[3][3]);
+    //change three other values to negative numbers
+        nums[1][4] = -4;
+        nums[2][4]=-5;
+        nums[0][3]=-434;
 
-//code to change half the values to even positive numbers
-        nums[0][0]=2;
-        nums[0][1]=2;
-        nums[0][2]=2;
-        nums[0][3]=2;
-
-        nums[2][0]=2;
-        nums[2][1]=2;
-        nums[2][2]=2;
-        nums[2][3]=2;
-
-//and the other half to negative odd numbers
-        nums[1][0]=-3;
-        nums[1][1]=-3;
-        nums[1][2]=-3;
-        nums[1][3]=-3;
-
-        nums[3][0]=-3;
-        nums[3][1]=-3;
-        nums[3][2]=-3;
-        nums[3][3]=-3;
-
-//code to output a blank line separating output
+    //make a statement to create a blank line here
         System.out.println();
 
-//code to output all array elements
+    // output all of the numbers again,
         System.out.println(nums[0][0]);
         System.out.println(nums[0][1]);
         System.out.println(nums[0][2]);
         System.out.println(nums[0][3]);
-
+        System.out.println(nums[0][4]);
         System.out.println(nums[1][0]);
         System.out.println(nums[1][1]);
         System.out.println(nums[1][2]);
         System.out.println(nums[1][3]);
-
+        System.out.println(nums[1][4]);
         System.out.println(nums[2][0]);
         System.out.println(nums[2][1]);
         System.out.println(nums[2][2]);
         System.out.println(nums[2][3]);
+        System.out.println(nums[2][4]);
+    // not just the changed ones
 
-        System.out.println(nums[3][0]);
-        System.out.println(nums[3][1]);
-        System.out.println(nums[3][2]);
-        System.out.println(nums[3][3]);
     }
 }
 
