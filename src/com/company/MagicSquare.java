@@ -1,11 +1,26 @@
 public class MagicSquare {
+    /**
+     * This program checks whether a square is a magical square.
+     * Same sum every row, column, diagonal
+     * @author Shirley Shuzhou Li
+     * @since 4/6/2020
+     */
     private int[][] grid;
+
+    /**
+     * initiating the object
+     * @param g 2d square array object
+     */
 
     public MagicSquare(int[][] g) {
         grid = g;
     }
 
-
+    /**
+     * Calculates the sum of given row
+     * @param row the row to find value of
+     * @return sum of the row given
+     */
     public int rowSum(int row) {
         // <<< Complete the code >>>
         int rowSum=0;
@@ -15,7 +30,11 @@ public class MagicSquare {
         return rowSum;
     }
 
-
+    /**
+     * Sum of the given column
+     * @param col given column
+     * @return sum of the given column
+     */
     public int colSum(int col) {
         // <<< Complete the code >>>
         int colSum=0;
@@ -25,7 +44,10 @@ public class MagicSquare {
         return colSum;
     }
 
-
+    /**
+     * Find the given diagonal sum (left bottom to right top)
+     * @return given diagonal sum
+     */
     public int upDiagSum() {
         // <<< Complete the code >>>
         int upSum=0;
@@ -36,7 +58,10 @@ public class MagicSquare {
         return upSum;
     }
 
-
+    /**
+     * Find the down diagonal sum (left top to right bottom)
+     * @return the sum of given diagonal
+     */
     public int downDiagSum() {
         // <<< Complete the code >>>
         int downSum=0;
@@ -47,7 +72,10 @@ public class MagicSquare {
         return downSum;
     }
 
-
+    /**
+     * whether the array is a square or not
+     * @return boolean is a sqaure or not a square
+     */
     public boolean isMagicSquare() {
         // <<< Complete the code >>>
         boolean ret=true;
